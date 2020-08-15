@@ -1,2 +1,2 @@
-# uw-rso-journey
+# uw-club-journey
 test
