@@ -1,0 +1,70 @@
+@import url('//fonts.googleapis.com/css?family=Noto+Sans+SC');
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+#shiny-tab-home h2 {
+  font-weight: 800;
+  font-size: 45px;
+}
+
+#shiny-tab-three h2, #shiny-tab-two h2, #shiny-tab-one h2, #shiny-tab-team h2 {
+  font-weight: 800;
+  font-size: 35px;
+}
+
+#shiny-tab-one .row p, #shiny-tab-two .row p {
+  padding: 25px 5px !important;
+}
+
+#shiny-tab-two .shiny-input-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#shiny-tab-three .shiny-input-container {
+  margin-left: 10px;
+}
+
+mark {
+  background: none;
+  font-weight: 800 !important;
+  color: #00C0EF !important;
+}
+
+#shiny-tab-home h3 {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+#shiny-tab-home .inner h3 {
+  font-size: 30px;
+}
+
+#shiny-tab-home {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#shiny-tab-one, #shiny-tab-two, #shiny-tab-three {
+  margin-top: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#shiny-tab-one h3 {
+  margin-top: 5px;
+}
+
+.crisp {
+  display: none !important;
+}
+
+.cboutline {
+  display: none !important;
+}
+
+.content-wrapper {
+  background-color: #F9F9F9;
+}
