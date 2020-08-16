@@ -40,7 +40,6 @@ shinyUI(dashboardPage(
         tabName = "journey",
         align = "center",
         h2(strong("My UW Club Journey")),
-        # imageOutput("meme"),
         # render turn.js
           # render each stamp
         fluidRow(tags$div(class="cover",
@@ -49,7 +48,11 @@ shinyUI(dashboardPage(
                                    tags$label(`for`="page-2", class="book__page book__page--",
                                               tags$div(class="page__content",
                                                        tags$h1(class="page__content-title", "To be continued..."),
-                                                       tags$div(class="page__content-text", tags$p("sample text")),
+                                                       tags$div(class="stamplist", style="filter: grayscale(100%);-webkit-filter: grayscale(100%);",
+                                                                imageOutput("teststamp5", width="30%", height="30%"),
+                                                                imageOutput("teststamp6", width="30%", height="30%"),
+                                                                imageOutput("teststamp7", width="30%", height="30%")
+                                                       ),
                                                        tags$div(class="page__number", "3")
                                                        )),
                                    tags$input(type="radio", name="page", id="page-1"),
@@ -62,7 +65,15 @@ shinyUI(dashboardPage(
                                                                 tags$div(class="page__content-copyright", tags$p("The University of Washington"), tags$p("2020 - 2021"))
                                                                 )),
                                               tags$div(class="book__page-back",
-                                                       tags$div(class="page__content", tags$h1(class="page__content-title", "Earned Badges"), tags$div(class="page__number", "2")))
+                                                       tags$div(class="page__content",
+                                                                tags$h1(class="page__content-title", "Earned Badges"),
+                                                                tags$div(class="stamplist",
+                                                                         imageOutput("teststamp", width="30%", height="30%"),
+                                                                         imageOutput("teststamp2", width="30%", height="30%"),
+                                                                         imageOutput("teststamp3", width="30%", height="30%"),
+                                                                         imageOutput("teststamp4", width="30%", height="30%")
+                                                                         ),
+                                                                tags$div(class="page__number", "2")))
                                               )
                                    )))
       ),

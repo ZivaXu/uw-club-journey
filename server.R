@@ -12,10 +12,65 @@ shinyServer(function(input, output) {
   # Read task stamp
   task_list <- read.csv("tasks/task-list.csv")
   # Output stamp image
-  output$one <- renderImage({
+  output$teststamp <- renderImage({
     return(list(
       src = "image/stamp/1.png",
       filetype = "image/png",
+      width = "100%",
+      alt = "Welcome to Trash Panda's Nest!"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$teststamp2 <- renderImage({
+    return(list(
+      src = "image/stamp/3.png",
+      filetype = "image/png",
+      width = "100%",
+      alt = "Welcome to Trash Panda's Nest!"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$teststamp3 <- renderImage({
+    return(list(
+      src = "image/stamp/5.png",
+      filetype = "image/png",
+      width = "100%",
+      alt = "Welcome to Trash Panda's Nest!"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$teststamp4 <- renderImage({
+    return(list(
+      src = "image/stamp/9.png",
+      filetype = "image/png",
+      width = "100%",
+      alt = "Welcome to Trash Panda's Nest!"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$teststamp5 <- renderImage({
+    return(list(
+      src = "image/stamp/23.png",
+      filetype = "image/png",
+      width = "100%",
+      alt = "Welcome to Trash Panda's Nest!"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$teststamp6 <- renderImage({
+    return(list(
+      src = "image/stamp/48.png",
+      filetype = "image/png",
+      width = "100%",
+      alt = "Welcome to Trash Panda's Nest!"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$teststamp7 <- renderImage({
+    return(list(
+      src = "image/stamp/51.png",
+      filetype = "image/png",
+      width = "100%",
       alt = "Welcome to Trash Panda's Nest!"
     ))
   }, deleteFile = FALSE)
