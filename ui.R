@@ -57,7 +57,9 @@ shinyUI(dashboardPage(
                                                                 imageOutput("teststamp6", width="30%", height="30%"),
                                                                 imageOutput("teststamp7", width="30%", height="30%"),
                                                                 imageOutput("teststamp9", width="30%", height="30%"),
-                                                                imageOutput("teststamp10", width="30%", height="30%")
+                                                                imageOutput("teststamp10", width="30%", height="30%"),
+                                                                imageOutput("teststamp12", width="30%", height="30%"),
+                                                                imageOutput("teststamp13", width="30%", height="30%")
                                                        ),
                                                        tags$div(class="page__number", "3")
                                                        )),

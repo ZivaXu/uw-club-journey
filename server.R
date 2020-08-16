@@ -113,6 +113,24 @@ shinyServer(function(input, output) {
     ))
   }, deleteFile = FALSE)
   
+  output$teststamp12 <- renderImage({
+    return(list(
+      src = "image/stamp/258.png",
+      filetype = "image/png",
+      width = "100%",
+      alt = "Virtual Club Fair"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$teststamp13 <- renderImage({
+    return(list(
+      src = "image/stamp/492.png",
+      filetype = "image/png",
+      width = "100%",
+      alt = "Virtual Club Fair"
+    ))
+  }, deleteFile = FALSE)
+  
   #Tasks tab
   output$rec_tasks <- DT::renderDataTable({
     DT::datatable(rectask1, colnames=c("Task Name", "Description"), options = list(paging = FALSE))
