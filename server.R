@@ -85,6 +85,21 @@ shinyServer(function(input, output) {
     colnames(starred_clubs) <- c("Club Name", "Contact Email")
     starred_clubs
   })
+  
+  #Top chart tab
+  output$top_20_club <- renderPlotly({
+    ggplotly(
+      ggplot(
+          data <- task_counts
+      ) +
+        geom_col(mapping = aes(x = Club_Name, y = Task_Counts)) +
+        coord_flip() +
+        ggtitle(
+          "Top 20 Users"
+        ) +
+        labs(x = "Club Name", y = "Completed Task Counts")
+    )
+  })
 })
 
 

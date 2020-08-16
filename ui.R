@@ -91,7 +91,11 @@ shinyUI(dashboardPage(
       # Third tab content
       tabItem(
         tabName = "topchart",
-        h2("Top Users") 
+        h2("Top Users"),
+        p("Hover on the graph to see the task counts for each club!!"),
+        mainPanel(
+          plotlyOutput(outputId = "top_20_club")
+        )
       ),
       
       # Fourth tab content

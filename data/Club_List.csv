@@ -1,51 +1,51 @@
-﻿Club_Name,Contact_Email,Starred
-Academy of General Dentistry,agduw@uw.edu,No
-Applied Analytics Club at UW,aacuw@uw.edu,No
-Film Production Club,luxvideo@uw.edu,No
-3D Printing Club,woof3d@uw.edu,No
-Academic and Recreational Graduate Oceanographers,uwargo@uw.edu,No
-Academy of Managed Care Pharmacy,uwamcp@gmail.com,No
-Access Student Resource Group,asrg@uw.edu,No
-Acting With Kindness @ UW,akauw@uw.edu,No
-Actuarial Club,Actuary@uw.edu,No
-Aeronautics & Astronautics Team,aact@uw.edu,No
-African Student Association,asauw@uw.edu,No
-AfroDance at UW,afdance@uw.edu,No
-AI Ethics Club,uw.ai.ethics@gmail.com,No
-Agents of History Roleplay Club,agenthstry@uw.edu,No
-Allen School Student Advisory Coucil,allensac@uw.edu,No
-American Cancer Society,acsuw@uw.edu,No
-American Marketing Association,acsuw@uw.edu,No
-American Society of Civil Engineers UW Chapter,asce@uw.edu,No
-Art Club,artclub@uw.edu,No
-Ascend at UW,uwascend@uw.edu,No
-Asian Business Student Association,absa@uw.edu,No
-Association of Computing Machinery,acm-officers@cs.washington.edu,No
-Association of Information Management Students,ainfoms@uw.edu,No
-Autonomous Rocket Control Club,gwthmpsn@uw.edu,No
-Bioethics Student Organization at UW,bsaatuw@uw.edu,No
-Bird Club at UW,birduw@uw.edu,No
-Boundless Investment Club,invclub@uw.edu,No
-Business Ethics Association,uwbea@uw.edu,No
-Business Information Technology Society,bits@uw.edu,No
-Chess Club,chessuw@uw.edu,No
-Climbing Team,climbuw@uw.edu,No
-Consulting Association at UW,uwconsultingassoc@gmail.com,No
-Cube Club,cubeclub@uw.edu,No
-Design for America,uwdfa@uw.edu,No
-Dollar Ice Cream Social Society,dicss@uw.edu,No
-DubHacks,dubhacks@uw.edu,Yes
-Fashion House,fashion@uw.edu,No
-Film Club,uwfilmfriends@gmail.com,No
-First Generation Huskies,firsthus@uw.edu,No
-Girls Who Code College Loops,uwcollegeloops@gmail.com,No
-Glee Club,uwgleeclub@uw.edu,No
-Harry Potter Club,hplover@uw.edu,Yes
-Hiking Club,hikingclubatuw@gmail.com,No
-Husky Archery Club,archers@uw.edu,No
-Husky Sales Club,usc@uw.edu,No
-Italian Club,italiauw@uw.edu,No
-Mahjong Club,mjuw@uw.edu,No
-Society of Women Engineers,swe@uw.edu,Yes
-Spanish Club,chadwell@uw.edu,No
-Student Council,uwsodsc@uw.edu,Yes
+﻿Club_Name,Contact_Email,Starred,Task_Counts
+Academy of General Dentistry,agduw@uw.edu,No,14
+Applied Analytics Club at UW,aacuw@uw.edu,No,13
+Film Production Club,luxvideo@uw.edu,No,2
+3D Printing Club,woof3d@uw.edu,No,6
+Academic and Recreational Graduate Oceanographers,uwargo@uw.edu,No,3
+Academy of Managed Care Pharmacy,uwamcp@gmail.com,No,11
+Access Student Resource Group,asrg@uw.edu,No,2
+Acting With Kindness @ UW,akauw@uw.edu,No,11
+Actuarial Club,Actuary@uw.edu,No,9
+Aeronautics & Astronautics Team,aact@uw.edu,No,5
+African Student Association,asauw@uw.edu,No,11
+AfroDance at UW,afdance@uw.edu,No,12
+AI Ethics Club,uw.ai.ethics@gmail.com,No,12
+Agents of History Roleplay Club,agenthstry@uw.edu,No,3
+Allen School Student Advisory Coucil,allensac@uw.edu,No,14
+American Cancer Society,acsuw@uw.edu,No,7
+American Marketing Association,acsuw@uw.edu,No,11
+American Society of Civil Engineers UW Chapter,asce@uw.edu,No,11
+Art Club,artclub@uw.edu,No,2
+Ascend at UW,uwascend@uw.edu,No,8
+Asian Business Student Association,absa@uw.edu,No,11
+Association of Computing Machinery,acm-officers@cs.washington.edu,No,9
+Association of Information Management Students,ainfoms@uw.edu,No,12
+Autonomous Rocket Control Club,gwthmpsn@uw.edu,No,10
+Bioethics Student Organization at UW,bsaatuw@uw.edu,No,2
+Bird Club at UW,birduw@uw.edu,No,8
+Boundless Investment Club,invclub@uw.edu,No,15
+Business Ethics Association,uwbea@uw.edu,No,14
+Business Information Technology Society,bits@uw.edu,No,7
+Chess Club,chessuw@uw.edu,No,4
+Climbing Team,climbuw@uw.edu,No,13
+Consulting Association at UW,uwconsultingassoc@gmail.com,No,12
+Cube Club,cubeclub@uw.edu,No,12
+Design for America,uwdfa@uw.edu,No,13
+Dollar Ice Cream Social Society,dicss@uw.edu,No,3
+DubHacks,dubhacks@uw.edu,Yes,2
+Fashion House,fashion@uw.edu,No,11
+Film Club,uwfilmfriends@gmail.com,No,13
+First Generation Huskies,firsthus@uw.edu,No,3
+Girls Who Code College Loops,uwcollegeloops@gmail.com,No,2
+Glee Club,uwgleeclub@uw.edu,No,10
+Harry Potter Club,hplover@uw.edu,Yes,1
+Hiking Club,hikingclubatuw@gmail.com,No,15
+Husky Archery Club,archers@uw.edu,No,8
+Husky Sales Club,usc@uw.edu,No,9
+Italian Club,italiauw@uw.edu,No,4
+Mahjong Club,mjuw@uw.edu,No,13
+Society of Women Engineers,swe@uw.edu,Yes,5
+Spanish Club,chadwell@uw.edu,No,1
+Student Council,uwsodsc@uw.edu,Yes,13
