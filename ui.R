@@ -42,7 +42,7 @@ shinyUI(dashboardPage(
         h2("Starred Clubs"),
         tableOutput(outputId = "starred_clubs"),
         h2("All Clubs"),
-        tableOutput(outputId = "all_clubs")
+        DT::dataTableOutput(outputId = "all_clubs")
       ),
       
       # Third tab content

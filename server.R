@@ -7,6 +7,7 @@ library(scales)
 library(plotly)
 library(shinydashboard)
 library(gapminder)
+library(DT)
 
 # Sample image in first tab
 shinyServer(function(input, output) {
@@ -19,9 +20,8 @@ shinyServer(function(input, output) {
   }, deleteFile = FALSE)
   
   #Club tab
-  output$all_clubs <- renderTable({
-    colnames(all_clubs) <- c("Club Name", "Contact Email")
-    all_clubs
+  output$all_clubs <- DT::renderDataTable({
+    DT::datatable(all_clubs, colnames=c("Club Name", "Contact Email"), options = list(paging = FALSE))
   })
   
   output$starred_clubs <- renderTable({
