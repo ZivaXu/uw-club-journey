@@ -20,4 +20,17 @@ shinyServer(function(input, output) {
     ))
   }, deleteFile = FALSE)
   
+  #Club tab
+  output$all_clubs <- renderTable({
+    colnames(all_clubs) <- c("Club Name", "Contact Email")
+    all_clubs
+  })
+  
+  output$starred_clubs <- renderTable({
+    colnames(starred_clubs) <- c("Club Name", "Contact Email")
+    starred_clubs
+  })
 })
+
+
+

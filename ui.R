@@ -71,7 +71,9 @@ shinyUI(dashboardPage(
       tabItem(
         tabName = "clubs",
         h2("Starred Clubs"),
-        h2("All Clubs")
+        tableOutput(outputId = "starred_clubs"),
+        h2("All Clubs"),
+        tableOutput(outputId = "all_clubs")
       ),
       
       # Third tab content
