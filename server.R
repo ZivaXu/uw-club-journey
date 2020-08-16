@@ -19,7 +19,7 @@ shinyServer(function(input, output) {
       src = "image/stamp/1.png",
       filetype = "image/png",
       width = "100%",
-      alt = "Welcome to Trash Panda's Nest!"
+      alt = "Rising Star"
     ))
   }, deleteFile = FALSE)
   
@@ -28,7 +28,7 @@ shinyServer(function(input, output) {
       src = "image/stamp/3.png",
       filetype = "image/png",
       width = "100%",
-      alt = "Welcome to Trash Panda's Nest!"
+      alt = "Sharing is Caring"
     ))
   }, deleteFile = FALSE)
   
@@ -37,7 +37,7 @@ shinyServer(function(input, output) {
       src = "image/stamp/5.png",
       filetype = "image/png",
       width = "100%",
-      alt = "Welcome to Trash Panda's Nest!"
+      alt = "Exploring"
     ))
   }, deleteFile = FALSE)
   
@@ -46,7 +46,7 @@ shinyServer(function(input, output) {
       src = "image/stamp/9.png",
       filetype = "image/png",
       width = "100%",
-      alt = "Welcome to Trash Panda's Nest!"
+      alt = "Founder"
     ))
   }, deleteFile = FALSE)
   
@@ -55,7 +55,7 @@ shinyServer(function(input, output) {
       src = "image/stamp/23.png",
       filetype = "image/png",
       width = "100%",
-      alt = "Welcome to Trash Panda's Nest!"
+      alt = "HuskyLink"
     ))
   }, deleteFile = FALSE)
   
@@ -64,7 +64,7 @@ shinyServer(function(input, output) {
       src = "image/stamp/48.png",
       filetype = "image/png",
       width = "100%",
-      alt = "Welcome to Trash Panda's Nest!"
+      alt = "Insta Guru"
     ))
   }, deleteFile = FALSE)
   
@@ -73,7 +73,43 @@ shinyServer(function(input, output) {
       src = "image/stamp/51.png",
       filetype = "image/png",
       width = "100%",
-      alt = "Welcome to Trash Panda's Nest!"
+      alt = "Recruiter"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$teststamp8 <- renderImage({
+    return(list(
+      src = "image/stamp/67.png",
+      filetype = "image/png",
+      width = "100%",
+      alt = "Club Baby I"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$teststamp9 <- renderImage({
+    return(list(
+      src = "image/stamp/84.png",
+      filetype = "image/png",
+      width = "100%",
+      alt = "Social Good"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$teststamp10 <- renderImage({
+    return(list(
+      src = "image/stamp/92.png",
+      filetype = "image/png",
+      width = "100%",
+      alt = "WOAH!"
+    ))
+  }, deleteFile = FALSE)
+  
+  output$teststamp11 <- renderImage({
+    return(list(
+      src = "image/stamp/372.png",
+      filetype = "image/png",
+      width = "100%",
+      alt = "Virtual Club Fair"
     ))
   }, deleteFile = FALSE)
   

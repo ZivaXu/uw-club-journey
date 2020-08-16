@@ -55,7 +55,9 @@ shinyUI(dashboardPage(
                                                        tags$div(class="stamplist", style="filter: grayscale(100%);-webkit-filter: grayscale(100%);",
                                                                 imageOutput("teststamp5", width="30%", height="30%"),
                                                                 imageOutput("teststamp6", width="30%", height="30%"),
-                                                                imageOutput("teststamp7", width="30%", height="30%")
+                                                                imageOutput("teststamp7", width="30%", height="30%"),
+                                                                imageOutput("teststamp9", width="30%", height="30%"),
+                                                                imageOutput("teststamp10", width="30%", height="30%")
                                                        ),
                                                        tags$div(class="page__number", "3")
                                                        )),
@@ -75,7 +77,9 @@ shinyUI(dashboardPage(
                                                                          imageOutput("teststamp", width="30%", height="30%"),
                                                                          imageOutput("teststamp2", width="30%", height="30%"),
                                                                          imageOutput("teststamp3", width="30%", height="30%"),
-                                                                         imageOutput("teststamp4", width="30%", height="30%")
+                                                                         imageOutput("teststamp4", width="30%", height="30%"),
+                                                                         imageOutput("teststamp8", width="30%", height="30%"),
+                                                                         imageOutput("teststamp11", width="30%", height="30%")
                                                                          ),
                                                                 tags$div(class="page__number", "2")))
                                               )
