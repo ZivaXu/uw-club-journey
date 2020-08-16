@@ -27,6 +27,16 @@ body {
   justify-content: center;
 }
 
+.shiny-image-output {
+  margin-top: 15px;
+}
+
+.stamplist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .cover {
   width: calc(var(--baseline) * 60);
   height: calc(var(--baseline) * 42.6);
@@ -162,7 +172,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: calc(var(--baseline) * 5);
-  margin-bottom: calc(var(--baseline) * 3);
+  margin-bottom: calc(var(--baseline) *2);
 }
 
 .book__page .page__content-table {
