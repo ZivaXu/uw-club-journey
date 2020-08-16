@@ -8,6 +8,12 @@ library(scales)
 library(plotly)
 library(rsconnect)
 library(gapminder)
+library(sass)
+
+sass(
+  sass_file("passport.scss"), 
+  output = "www/passport.css"
+)
 
 shinyUI(dashboardPage(
   skin = "purple",
@@ -25,15 +31,40 @@ shinyUI(dashboardPage(
   ),
   dashboardBody(
     tags$head(
-      tags$link(rel = "stylesheet", type = "text/css", href = "custom.css")
+      tags$link(rel = "stylesheet", type = "text/css", href = "custom.css"),
+      tags$link(rel = "stylesheet", type = "text/css", href = "passport.css")
     ),
     tabItems(
       # First tab content
       tabItem(
         tabName = "journey",
         align = "center",
-        h2(strong("Passport stuff")),
-        imageOutput("meme")
+        h2(strong("My UW Club Journey")),
+        # imageOutput("meme"),
+        # render turn.js
+          # render each stamp
+        fluidRow(tags$div(class="cover",
+                          tags$div(class="book",
+                                   tags$label(`for`="page-1", class="book__page book__page--1", HTML("<img class='cover-image' src='https://i.pinimg.com/564x/47/f7/b6/47f7b639b546a284092b20ceae869416.jpg'>")),
+                                   tags$label(`for`="page-2", class="book__page book__page--",
+                                              tags$div(class="page__content",
+                                                       tags$h1(class="page__content-title", "To be continued..."),
+                                                       tags$div(class="page__content-text", tags$p("sample text")),
+                                                       tags$div(class="page__number", "3")
+                                                       )),
+                                   tags$input(type="radio", name="page", id="page-1"),
+                                   tags$input(type="radio", name="page", id="page-2"),
+                                   tags$label(class="book__page book__page--2",
+                                              tags$div(class="book__page-front",
+                                                       tags$div(class="page__content",
+                                                                tags$h1(class="page__content-book-title", "UW Club Journey"),
+                                                                tags$h2(class="page__content-author", "A Happy Husky"),
+                                                                tags$div(class="page__content-copyright", tags$p("The University of Washington"), tags$p("2020 - 2021"))
+                                                                )),
+                                              tags$div(class="book__page-back",
+                                                       tags$div(class="page__content", tags$h1(class="page__content-title", "Earned Badges"), tags$div(class="page__number", "2")))
+                                              )
+                                   )))
       ),
       
       # Second tab content
@@ -50,7 +81,8 @@ shinyUI(dashboardPage(
         tabName = "topchart",
         h2("Top Users") 
       ),
-        # Fourth tab content
+      
+      # Fourth tab content
       tabItem(
         tabName = "signin",
         #box(width = 7, h2("Sign In")),
