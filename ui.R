@@ -45,7 +45,17 @@ shinyUI(dashboardPage(
       # Third tab content
       tabItem(
         tabName = "topchart",
-        h2("Top Users")
+        h2("Top Users"), 
+        
+        # Fourth tab content
+      tabItem(
+        tabName = "signin",
+        #box(width = 7, h2("Sign In")),
+        align = "center",
+        tags$h2("LOG IN", class = "text-center", style = "padding-top: 0;color:#333; font-weight:600;"),
+        textInput("userName", placeholder="Username", label = tagList(icon("user"), "Username")),
+        passwordInput("passwd", placeholder="Password", label = tagList(icon("unlock-alt"), "Password")),
+      )
       )
     )
   )
