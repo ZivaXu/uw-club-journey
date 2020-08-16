@@ -1,0 +1,12 @@
+name: uw-club-journey
+title: uw-club-journey
+username:
+account: zivaxu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2675252
+bundleId: 3522496
+url: https://zivaxu.shinyapps.io/uw-club-journey/
+when: 1597601595.33251
+asMultiple: FALSE
+asStatic: FALSE

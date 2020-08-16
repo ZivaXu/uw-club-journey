@@ -11,6 +11,8 @@ library(gapminder)
 library(sass)
 library(DT)
 
+source('import_data.R')
+
 sass(
   sass_file("passport.scss"), 
   output = "www/passport.css"
@@ -24,6 +26,7 @@ shinyUI(dashboardPage(
     sidebarMenu(
       id = "sidebar",
       menuItem("My Journey", tabName = "journey", icon = icon("map")),
+      menuItem("My Tasks", tabName = "tasks", icon = icon("tasks")),
       menuItem("Clubs", tabName = "clubs", icon = icon("stream")),
       menuItem("Top Chart", tabName = "topchart", icon = icon("chart-line")),
       menuItem("Sign In/Up", tabName = "signin", icon = icon("user"))
@@ -52,7 +55,11 @@ shinyUI(dashboardPage(
                                                        tags$div(class="stamplist", style="filter: grayscale(100%);-webkit-filter: grayscale(100%);",
                                                                 imageOutput("teststamp5", width="30%", height="30%"),
                                                                 imageOutput("teststamp6", width="30%", height="30%"),
-                                                                imageOutput("teststamp7", width="30%", height="30%")
+                                                                imageOutput("teststamp7", width="30%", height="30%"),
+                                                                imageOutput("teststamp9", width="30%", height="30%"),
+                                                                imageOutput("teststamp10", width="30%", height="30%"),
+                                                                imageOutput("teststamp12", width="30%", height="30%"),
+                                                                imageOutput("teststamp13", width="30%", height="30%")
                                                        ),
                                                        tags$div(class="page__number", "3")
                                                        )),
@@ -72,7 +79,9 @@ shinyUI(dashboardPage(
                                                                          imageOutput("teststamp", width="30%", height="30%"),
                                                                          imageOutput("teststamp2", width="30%", height="30%"),
                                                                          imageOutput("teststamp3", width="30%", height="30%"),
-                                                                         imageOutput("teststamp4", width="30%", height="30%")
+                                                                         imageOutput("teststamp4", width="30%", height="30%"),
+                                                                         imageOutput("teststamp8", width="30%", height="30%"),
+                                                                         imageOutput("teststamp11", width="30%", height="30%")
                                                                          ),
                                                                 tags$div(class="page__number", "2")))
                                               )
@@ -81,6 +90,15 @@ shinyUI(dashboardPage(
       
       # Second tab content
       tabItem(
+        tabName = "tasks",
+        h2("My Tasks"),
+        dataTableOutput(outputId = "my_tasks"),
+        h2("Recommended Tasks"),
+        dataTableOutput(outputId = "rec_tasks")
+      ),
+      
+      # Third tab content
+      tabItem(
         tabName = "clubs",
         h2("Starred Clubs"),
         tableOutput(outputId = "starred_clubs"),
@@ -88,7 +106,7 @@ shinyUI(dashboardPage(
         dataTableOutput(outputId = "all_clubs")
       ),
       
-      # Third tab content
+      # Fourth tab content
       tabItem(
         tabName = "topchart",
         h2("Top Users"),
@@ -98,7 +116,7 @@ shinyUI(dashboardPage(
         )
       ),
       
-      # Fourth tab content
+      # Fifth tab content
       tabItem(
         tabName = "signin",
         #box(width = 7, h2("Sign In")),
