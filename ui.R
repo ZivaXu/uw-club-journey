@@ -9,6 +9,7 @@ library(plotly)
 library(rsconnect)
 library(gapminder)
 library(sass)
+library(DT)
 
 sass(
   sass_file("passport.scss"), 
@@ -73,7 +74,7 @@ shinyUI(dashboardPage(
         h2("Starred Clubs"),
         tableOutput(outputId = "starred_clubs"),
         h2("All Clubs"),
-        DT::dataTableOutput(outputId = "all_clubs")
+        dataTableOutput(outputId = "all_clubs")
       ),
       
       # Third tab content
