@@ -18,7 +18,8 @@ shinyUI(dashboardPage(
       id = "sidebar",
       menuItem("My Journey", tabName = "journey", icon = icon("map")),
       menuItem("Clubs", tabName = "clubs", icon = icon("stream")),
-      menuItem("Top Chart", tabName = "topchart", icon = icon("chart-line"))
+      menuItem("Top Chart", tabName = "topchart", icon = icon("chart-line")),
+      menuItem("Sign In/Up", tabName = "signin", icon = icon("user"))
     ),
     uiOutput("style_tag")
   ),
@@ -47,8 +48,8 @@ shinyUI(dashboardPage(
       # Third tab content
       tabItem(
         tabName = "topchart",
-        h2("Top Users"), 
-        
+        h2("Top Users") 
+      ),
         # Fourth tab content
       tabItem(
         tabName = "signin",
@@ -56,8 +57,7 @@ shinyUI(dashboardPage(
         align = "center",
         tags$h2("LOG IN", class = "text-center", style = "padding-top: 0;color:#333; font-weight:600;"),
         textInput("userName", placeholder="Username", label = tagList(icon("user"), "Username")),
-        passwordInput("passwd", placeholder="Password", label = tagList(icon("unlock-alt"), "Password")),
-      )
+        passwordInput("passwd", placeholder="Password", label = tagList(icon("unlock-alt"), "Password"))
       )
     )
   )
