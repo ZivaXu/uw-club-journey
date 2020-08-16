@@ -12,6 +12,7 @@ library(DT)
 shinyServer(function(input, output) {
   # Read task stamp
   task_list <- read.csv("tasks/task-list.csv")
+  
   # Output stamp image
   output$teststamp <- renderImage({
     return(list(
@@ -75,6 +76,15 @@ shinyServer(function(input, output) {
       alt = "Welcome to Trash Panda's Nest!"
     ))
   }, deleteFile = FALSE)
+  
+  #Tasks tab
+  output$rec_tasks <- DT::renderDataTable({
+    DT::datatable(rectask1, colnames=c("Task Name", "Description"), options = list(paging = FALSE))
+  })
+  
+  output$my_tasks <- DT::renderDataTable({
+    DT::datatable(user_tasklist11, colnames=c("Task Name", "Description", "Completed?"), options = list(paging = FALSE))
+  })
   
   #Club tab
   output$all_clubs <- DT::renderDataTable({

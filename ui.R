@@ -11,6 +11,8 @@ library(gapminder)
 library(sass)
 library(DT)
 
+source('import_data.R')
+
 sass(
   sass_file("passport.scss"), 
   output = "www/passport.css"
@@ -24,6 +26,7 @@ shinyUI(dashboardPage(
     sidebarMenu(
       id = "sidebar",
       menuItem("My Journey", tabName = "journey", icon = icon("map")),
+      menuItem("My Tasks", tabName = "tasks", icon = icon("tasks")),
       menuItem("Clubs", tabName = "clubs", icon = icon("stream")),
       menuItem("Top Chart", tabName = "topchart", icon = icon("chart-line")),
       menuItem("Sign In/Up", tabName = "signin", icon = icon("user"))
@@ -81,6 +84,15 @@ shinyUI(dashboardPage(
       
       # Second tab content
       tabItem(
+        tabName = "tasks",
+        h2("My Tasks"),
+        dataTableOutput(outputId = "my_tasks"),
+        h2("Recommended Tasks"),
+        dataTableOutput(outputId = "rec_tasks")
+      ),
+      
+      # Third tab content
+      tabItem(
         tabName = "clubs",
         h2("Starred Clubs"),
         tableOutput(outputId = "starred_clubs"),
@@ -88,13 +100,13 @@ shinyUI(dashboardPage(
         dataTableOutput(outputId = "all_clubs")
       ),
       
-      # Third tab content
+      # Fourth tab content
       tabItem(
         tabName = "topchart",
         h2("Top Users") 
       ),
       
-      # Fourth tab content
+      # Fifth tab content
       tabItem(
         tabName = "signin",
         #box(width = 7, h2("Sign In")),
