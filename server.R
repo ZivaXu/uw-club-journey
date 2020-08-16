@@ -8,12 +8,14 @@ library(plotly)
 library(shinydashboard)
 library(gapminder)
 
-# Sample image in first tab
 shinyServer(function(input, output) {
-  output$meme <- renderImage({
+  # Read task stamp
+  task_list <- read.csv("tasks/task-list.csv")
+  # Output stamp image
+  output$one <- renderImage({
     return(list(
-      src = "image/meme.jpg",
-      filetype = "image/jpeg",
+      src = "image/stamp/1.png",
+      filetype = "image/png",
       alt = "Welcome to Trash Panda's Nest!"
     ))
   }, deleteFile = FALSE)
